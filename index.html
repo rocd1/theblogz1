@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog by Roc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Blog Untitled</h1>
+        <button id="adminButton">by Roc</button>
+    </header>
+    <main id="content">
+        <!-- Blog content will be here -->
+    </main>
+
+    <!-- Hidden Admin Page -->
+    <div id="adminPage" class="hidden">
+        <h2>Admin Page</h2>
+        <form id="blogForm">
+            <label for="title">Blog Title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="blogContent">Blog Content:</label>
+            <textarea id="blogContent" name="content" required></textarea>
+            <label for="image">Image URL:</label>
+            <input type="url" id="image" name="image">
+            <label for="video">Video URL:</label>
+            <input type="url" id="video" name="video">
+            <button type="submit">Add Blog</button>
+        </form>
+        <button id="closeAdmin">Close Admin</button>
+    </div>
+
+    <div id="comments"><strong>Comments:</strong></div>
+    
+    <!-- Comment Form -->
+    <div class="container">
+        <form id="commentForm">
+            <input type="text" id="commentName" placeholder="Your Name" required>
+            <textarea id="commentMessage" placeholder="Your Comment" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <span class="text-muted"><a href="https://wa.me/qr/RMTIILK3PEM3O1">Contact us</a></span>
+        <p>&copy;Roc2024</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
